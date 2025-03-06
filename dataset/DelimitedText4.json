@@ -5,6 +5,11 @@
 			"referenceName": "AzureBlobStorageAssessment1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"srcparam": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

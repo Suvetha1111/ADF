@@ -3,11 +3,15 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "ForEach1",
+				"name": "ForEach2",
 				"type": "ForEach",
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@variables('variable')",
+						"type": "Expression"
+					},
 					"isSequential": true,
 					"activities": [
 						{
@@ -25,6 +29,12 @@
 							"typeProperties": {
 								"source": {
 									"type": "DelimitedTextSource",
+									"additionalColumns": [
+										{
+											"name": "data loaded at",
+											"value": ""
+										}
+									],
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
 										"recursive": true,
@@ -55,13 +65,25 @@
 							"inputs": [
 								{
 									"referenceName": "DelimitedText4",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"srcparam": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "AzureSqlTable5",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"destparam": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
@@ -69,6 +91,16 @@
 				}
 			}
 		],
+		"variables": {
+			"variable": {
+				"type": "Array",
+				"defaultValue": [
+					"Country",
+					"Customer",
+					"Product"
+				]
+			}
+		},
 		"folder": {
 			"name": "Assesment"
 		},
