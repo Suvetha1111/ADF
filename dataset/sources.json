@@ -1,0 +1,29 @@
+{
+	"name": "sources",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageexcel",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"eachvalue": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": {
+				"value": "@dataset().eachvalue",
+				"type": "Expression"
+			},
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "retailsalesdataset.xlsx",
+				"container": "foreachcontainer"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

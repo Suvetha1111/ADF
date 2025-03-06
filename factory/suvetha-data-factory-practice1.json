@@ -1,0 +1,9 @@
+{
+	"name": "suvetha-data-factory-practice1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dab34a64-051f-4eb6-925c-212b3c258435",
+		"tenantId": "2800c0a0-70e9-49be-8733-faeaa6aced99"
+	}
+}

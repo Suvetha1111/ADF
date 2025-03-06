@@ -1,0 +1,12 @@
+{
+	"name": "AzureBlobStorage3",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=dhiyastorage;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDhERkFFNkVELTkzQTQtNDJDMy05MkE1LUUyQjJGMDQ0RDhBNF9hYWY3ZTBhZi00NzgzLTQ2MDctYWJiNy0yZGUyNWIxMDExNzUiDQp9"
+		}
+	}
+}

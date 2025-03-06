@@ -1,0 +1,32 @@
+{
+	"name": "sinksheets",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStoragesheet",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"names": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().names",
+					"type": "Expression"
+				},
+				"container": "foreachcontainerdestination"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
