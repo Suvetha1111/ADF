@@ -67,54 +67,6 @@
 							},
 							{
 								"source": {
-									"path": "$['address']['street']"
-								},
-								"sink": {
-									"name": "Street"
-								}
-							},
-							{
-								"source": {
-									"path": "$['address']['suite']"
-								},
-								"sink": {
-									"name": "Suite"
-								}
-							},
-							{
-								"source": {
-									"path": "$['address']['city']"
-								},
-								"sink": {
-									"name": "City"
-								}
-							},
-							{
-								"source": {
-									"path": "$['address']['zipcode']"
-								},
-								"sink": {
-									"name": "Zipcode"
-								}
-							},
-							{
-								"source": {
-									"path": "$['address']['geo']['lat']"
-								},
-								"sink": {
-									"name": "Lat"
-								}
-							},
-							{
-								"source": {
-									"path": "$['address']['geo']['lng']"
-								},
-								"sink": {
-									"name": "Lng"
-								}
-							},
-							{
-								"source": {
 									"path": "$['phone']"
 								},
 								"sink": {
@@ -135,22 +87,6 @@
 								},
 								"sink": {
 									"name": "CompanyName"
-								}
-							},
-							{
-								"source": {
-									"path": "$['company']['catchPhrase']"
-								},
-								"sink": {
-									"name": "CatchPhrase"
-								}
-							},
-							{
-								"source": {
-									"path": "$['company']['bs']"
-								},
-								"sink": {
-									"name": "Bs"
 								}
 							}
 						],

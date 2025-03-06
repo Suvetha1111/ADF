@@ -7,7 +7,73 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [],
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Username",
+				"type": "varchar"
+			},
+			{
+				"name": "Email",
+				"type": "varchar"
+			},
+			{
+				"name": "Street",
+				"type": "varchar"
+			},
+			{
+				"name": "Suite",
+				"type": "varchar"
+			},
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "Zipcode",
+				"type": "varchar"
+			},
+			{
+				"name": "Lat",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 6
+			},
+			{
+				"name": "Lng",
+				"type": "decimal",
+				"precision": 9,
+				"scale": 6
+			},
+			{
+				"name": "Phone",
+				"type": "varchar"
+			},
+			{
+				"name": "Website",
+				"type": "varchar"
+			},
+			{
+				"name": "CompanyName",
+				"type": "varchar"
+			},
+			{
+				"name": "CatchPhrase",
+				"type": "varchar"
+			},
+			{
+				"name": "Bs",
+				"type": "varchar"
+			}
+		],
 		"typeProperties": {
 			"schema": "dbo",
 			"table": "UserProfile"
