@@ -1,0 +1,24 @@
+{
+	"name": "AzureSqlTable5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlAssesmentsql",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"destparam": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().destparam",
+				"type": "Expression"
+			}
+		}
+	}
+}
