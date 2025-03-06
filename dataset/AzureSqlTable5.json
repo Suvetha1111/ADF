@@ -14,7 +14,7 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "overall_files",
+			"schema": "schema",
 			"table": {
 				"value": "@dataset().destparam",
 				"type": "Expression"
