@@ -15,10 +15,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().files",
-					"type": "Expression"
-				},
 				"folderPath": "ADF Assessment - March 2025",
 				"container": "assesmentquestion1"
 			},
